@@ -19,8 +19,6 @@ export class MenuIconComponent implements OnInit {
   handleHideButton() {
     if (this.hideOnClick) {
       this.isVisible = false;
-      console.log(this.isVisible);
-
     }
   }
 

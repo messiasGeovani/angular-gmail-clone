@@ -4,7 +4,7 @@
   aria-label="Example icon-button with a menu"
   [style.visibility]="!isVisible ? 'hidden' : 'visible'"
   (click)="handleHideButton()"
-  (menuClosed)="handleShowButton()"
+  (menuClosed)="handleHideButton()"
 >
   <mat-icon>{{ icon || 'info' }}</mat-icon>
 </button>

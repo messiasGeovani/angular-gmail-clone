@@ -3,7 +3,10 @@ import { CommonModule } from '@angular/common';
 
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenavModule } from '@angular/material/sidenav';
-import { MatFormFieldModule } from '@angular/material/form-field';
+import {
+  MatFormFieldControl,
+  MatFormFieldModule,
+} from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatMenuModule } from '@angular/material/menu';
@@ -15,9 +18,9 @@ import { MatChipsModule } from '@angular/material/chips';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatButtonModule } from '@angular/material/button';
+import { MatInputModule } from '@angular/material/input';
 
 @NgModule({
-  declarations: [],
   imports: [
     CommonModule,
     MatToolbarModule,
@@ -34,6 +37,7 @@ import { MatButtonModule } from '@angular/material/button';
     MatDatepickerModule,
     MatSlideToggleModule,
     MatButtonModule,
+    MatInputModule,
   ],
   exports: [
     CommonModule,
@@ -51,6 +55,7 @@ import { MatButtonModule } from '@angular/material/button';
     MatDatepickerModule,
     MatSlideToggleModule,
     MatButtonModule,
+    MatInputModule
   ],
 })
 export class MaterialModule {}

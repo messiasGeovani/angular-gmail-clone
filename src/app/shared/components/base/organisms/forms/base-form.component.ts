@@ -1,12 +1,17 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup } from '@angular/forms';
 
 @Component({
   template: '',
 })
 export abstract class BaseFormComponent implements OnInit {
-  abstract fields: { [key: string]: any };
+  abstract fields: FormGroup;
 
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.configureFields();
+  }
+
+  abstract configureFields(): void;
 }

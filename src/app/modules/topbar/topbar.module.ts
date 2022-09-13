@@ -2,8 +2,8 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
 import { SharedModule } from 'src/app/shared/shared.module';
-import { FormMailFilterComponent } from './components/organisms/form-mail-filter/form-mail-filter.component';
-import { MailFilterComponent } from './components/organisms/mail-filter/mail-filter.component';
+import { FormMailFilterComponent } from './components/form-mail-filter/form-mail-filter.component';
+import { MailFilterComponent } from './components/mail-filter/mail-filter.component';
 import { TopbarComponent } from './topbar.component';
 
 @NgModule({

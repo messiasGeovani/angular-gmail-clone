@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
-import { BaseFormComponent } from 'src/app/shared/components/base/organisms/forms/base-form.component';
+import { BaseFormComponent } from 'src/app/shared/components/base/forms/base-form.component';
 
 @Component({
   selector: 'app-form-mail-filter',

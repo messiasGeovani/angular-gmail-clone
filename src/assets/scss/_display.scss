@@ -1,0 +1,42 @@
+.flex-default {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column
+}
+
+.centered-full {
+  @extend .flex-default;
+
+  align-items: center;
+  justify-content: center;
+
+  &--column {
+    @extend .flex-column;
+  }
+}
+
+.centered-vertical {
+  @extend .flex-default;
+
+  align-items: center;
+
+  &--column {
+    @extend .flex-column;
+    
+    justify-content: center;
+  }
+}
+
+.centered-horizontal {
+  @extend .flex-default;
+
+  justify-content: center;
+
+  &--column {
+    @extend .flex-column;
+
+    align-items: center;
+  }
+}

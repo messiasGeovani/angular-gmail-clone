@@ -7,6 +7,12 @@ import { TopbarModule } from './modules/topbar/topbar.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AppRoutingModule } from './app-routing.module';
 
+import { NgxMaskModule, IConfig } from 'ngx-mask';
+
+const maskConfig: Partial<IConfig> = {
+  validation: false,
+};
+
 @NgModule({
   declarations: [AppComponent],
   imports: [
@@ -15,6 +21,7 @@ import { AppRoutingModule } from './app-routing.module';
     TopbarModule,
     NgbModule,
     AppRoutingModule,
+    NgxMaskModule.forRoot(maskConfig),
   ],
   providers: [],
   bootstrap: [AppComponent],

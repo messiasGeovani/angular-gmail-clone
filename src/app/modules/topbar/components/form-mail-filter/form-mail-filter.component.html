@@ -1,0 +1,116 @@
+<form [formGroup]="fields">
+  <div class="centered-vertical justify-content-between">
+    <mat-label class="label--spaced">From</mat-label>
+
+    <mat-form-field class="input">
+      <input type="text" matInput>
+    </mat-form-field>
+  </div>
+
+  <div class="centered-vertical justify-content-between">
+    <mat-label class="label--spaced">To</mat-label>
+
+    <mat-form-field class="input">
+      <input type="text" matInput>
+    </mat-form-field>
+  </div>
+
+  <div class="centered-vertical justify-content-between">
+    <mat-label class="label--spaced">Subject</mat-label>
+
+    <mat-form-field class="input">
+      <input type="text" matInput>
+    </mat-form-field>
+  </div>
+
+  <div class="centered-vertical justify-content-between">
+    <mat-label class="label--spaced">Has the words</mat-label>
+
+    <mat-form-field class="input">
+      <input type="text" matInput>
+    </mat-form-field>
+  </div>
+
+  <div class="centered-vertical justify-content-between">
+    <mat-label class="label--spaced">Doesn't have</mat-label>
+
+    <mat-form-field class="input">
+      <input type="text" matInput>
+    </mat-form-field>
+  </div>
+
+  <div class="centered-vertical justify-content-between">
+    <mat-label class="label--spaced">Size</mat-label>
+
+    <div class="row">
+      <div class="col">
+        <mat-form-field class="input--small">
+          <mat-select value="Greater than">
+            <mat-option value="Greater than">
+              Greater than
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+      <div class="col">
+        <mat-form-field class="input--small">
+          <input type="text" matInput>
+        </mat-form-field>
+      </div>
+      <div class="col">
+        <mat-form-field class="input--small">
+          <mat-select value="MB">
+            <mat-option value="MB">
+              MB
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+    </div>
+  </div>
+
+  <div class="centered-vertical justify-content-between">
+    <mat-label class="label--spaced">Size</mat-label>
+
+    <div class="row">
+      <div class="col">
+        <mat-form-field class="input--full-width">
+          <mat-select value="1 day">
+            <mat-option value="1 day">
+              1 day
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+      <div class="col">
+        <mat-form-field class="input--medium">
+          <input type="text" matInput mask="d0/M0/0000" [matDatepicker]="picker">
+          <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+          <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+      </div>
+    </div>
+  </div>
+
+  <div class="centered-vertical justify-content-between">
+    <mat-label class="label--spaced">Search</mat-label>
+
+    <mat-form-field class="input">
+      <mat-select value="All Mail">
+        <mat-option value="All Mail">
+          All Mail
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+
+  <div>
+    <mat-checkbox color="primary" class="checkbox--spaced">Has attachment</mat-checkbox>
+    <mat-checkbox color="primary">Don't include chats</mat-checkbox>
+  </div>
+
+  <div class="centered-vertical justify-content-end">
+    <button mat-button disabled>Create filter</button>
+    <button mat-raised-button color="primary">Search</button>
+  </div>
+</form>

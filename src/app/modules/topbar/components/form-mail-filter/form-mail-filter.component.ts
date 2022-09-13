@@ -11,7 +11,6 @@ export class FormMailFilterComponent
   extends BaseFormComponent
   implements OnInit
 {
-  inputTeste = '';
   fields: FormGroup;
 
   constructor(private formBuilder: FormBuilder) {
@@ -28,12 +27,11 @@ export class FormMailFilterComponent
       subject: [''],
       hasTheWords: [''],
       doesntHave: [''],
-      size: this.formBuilder.group({
-        order: ['greater than'],
-        measurementNumber: [null],
-        measureType: ['MB'],
-      }),
+      sizeOrder: [''],
+      sizeMeasurement: [null],
+      sizeType: ['MB'],
       dateWithin: ['1 day'],
+      mailDate: [null],
       searchIn: ['all mail'],
       hasAttachment: [false],
       includeChats: [false],

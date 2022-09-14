@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MailFilterComponent } from './mail-filter.component';
+import { MailFilterButtonComponent } from './mail-filter-button.component';
 
-describe('MailFilterComponent', () => {
-  let component: MailFilterComponent;
-  let fixture: ComponentFixture<MailFilterComponent>;
+describe('MailFilterButtonComponent', () => {
+  let component: MailFilterButtonComponent;
+  let fixture: ComponentFixture<MailFilterButtonComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ MailFilterComponent ]
+      declarations: [ MailFilterButtonComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(MailFilterComponent);
+    fixture = TestBed.createComponent(MailFilterButtonComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

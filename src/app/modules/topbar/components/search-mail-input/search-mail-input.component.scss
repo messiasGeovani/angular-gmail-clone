@@ -2,6 +2,11 @@
   padding: 0 !important;
 }
 
+::ng-deep .mat-expansion-panel-body {
+  padding: 0 !important;
+  padding-bottom: 8px !important;
+}
+
 ::ng-deep .mat-accordion .mat-expansion-panel .mat-content {
   border-radius: 8px !important;
 }

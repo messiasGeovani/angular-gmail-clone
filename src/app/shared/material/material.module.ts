@@ -22,6 +22,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { MatNativeDateModule, MatOptionModule } from '@angular/material/core';
 import { MatExpansionModule } from '@angular/material/expansion';
+import { MatListModule } from '@angular/material/list';
 
 @NgModule({
   imports: [
@@ -44,7 +45,8 @@ import { MatExpansionModule } from '@angular/material/expansion';
     MatSelectModule,
     MatOptionModule,
     MatNativeDateModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatListModule,
   ],
   exports: [
     CommonModule,
@@ -66,7 +68,8 @@ import { MatExpansionModule } from '@angular/material/expansion';
     MatSelectModule,
     MatOptionModule,
     MatNativeDateModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatListModule,
   ],
 })
 export class MaterialModule {}

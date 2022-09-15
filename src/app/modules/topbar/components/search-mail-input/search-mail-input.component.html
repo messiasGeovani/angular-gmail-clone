@@ -1,12 +1,11 @@
 <mat-accordion>
-  <mat-expansion-panel hideToggle class="wrapper">
+  <mat-expansion-panel hideToggle class="wrapper" #matExpansionPanel>
     <mat-expansion-panel-header>
-      <input type="text" placeholder="Search in mail" class="wrapper__input">
+      <input #searchInput type="text" placeholder="Search in mail" class="wrapper__input" [formControl]="searchValue" (keyup.enter)="$event.stopPropagation(); search()">
       <mat-icon class="wrapper__input__icon">search</mat-icon>
       <app-mail-filter-button (click)="$event.stopPropagation();" class="wrapper__icon-button"></app-mail-filter-button>
     </mat-expansion-panel-header>
-    <div>
-      sonisbleinis
-    </div>
+    
+    <app-form-search-mail (historyItemSelected)="handleSetInputValue($event)"></app-form-search-mail>
   </mat-expansion-panel>
 </mat-accordion>

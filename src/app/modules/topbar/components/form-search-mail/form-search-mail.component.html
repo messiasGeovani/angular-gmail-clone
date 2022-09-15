@@ -1,0 +1,23 @@
+<div>
+  <div class="button-group">
+    <button mat-stroked-button>Has attachment</button>
+    <button mat-stroked-button>Has attachment</button>
+    <button mat-stroked-button>Has attachment</button>
+  </div>
+
+  <div>
+    <mat-selection-list #shoes [multiple]="false">
+      <mat-list-option *ngFor="let historyItem of searchHistory; index as i" [value]="historyItem" class="list-item" (click)="selectItemFromHistory(historyItem)">
+        <div class="w-100 centered-vertical justify-content-between">
+          <span>
+            <mat-icon class="list-item__icon">schedule</mat-icon>
+            {{historyItem}}
+          </span>
+          <mat-icon class="list-item__icon--close" (click)="handleRemoveItemFromHistory(i)">
+            close
+          </mat-icon>
+        </div>
+      </mat-list-option>
+    </mat-selection-list>
+  </div>
+</div>

@@ -1,0 +1,43 @@
+@import '/src/assets/scss/_colors';
+
+.button-group {
+  padding: 10px 15px;
+
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+
+  & > button + button {
+    margin-left: 10px;
+  }
+}
+
+.list-item {
+  border-left: 2px solid transparent;
+  height: 34px !important;
+
+  padding-right: 0 !important;
+
+  &__icon {
+    font-size: 17px;
+    position: relative;
+    top: 2px;
+
+    &--close {
+      @extend .list-item__icon;
+      
+      display: none;
+      top: 5px;
+      right: -20px;
+      font-size: 12px;
+      font-weight: 600;
+    }
+  }
+
+  &:hover {
+    border-color: $primary;
+    
+    div > mat-icon {
+      display: initial;
+    }
+  }
+}
